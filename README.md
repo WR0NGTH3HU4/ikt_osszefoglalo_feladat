@@ -24,5 +24,5 @@
 - Az oldal a style.css fájlt felhasználva néz ki úgy ahogy.
 
 ## Activity log
--2023.01.11. Az oldal vázának elkészítése, képek gyűjtése
--2023.01.13. Az oldal hátterének meganimálása, a váz elkészítésének újrakezdése, flexbox froggyval gyakorlás, az eddigi váz eltávolítása
+-2023.01.11. Az oldal vázának elkészítése, képek gyűjtése.
+-2023.01.13. Az oldal hátterének meganimálása, a váz elkészítésének újrakezdése, flexbox froggyval gyakorlás, az eddigi váz eltávolítása.
