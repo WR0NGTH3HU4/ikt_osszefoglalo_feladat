@@ -25,3 +25,4 @@
 
 ## Activity log
 -2023.01.11. Az oldal vázának elkészítése, képek gyűjtése
+-2023.01.13. Az oldal hátterének meganimálása, a váz elkészítésének újrakezdése, flexbox froggyval gyakorlás, az eddigi váz eltávolítása
