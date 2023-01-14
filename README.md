@@ -2,7 +2,7 @@
 - By: Máté Kulimák
 
 ## Pages
-- 
+- https://wr0ngth3hu4.github.io/web_osszefoglalo_feladat/
 
 ## index.html
 - Ezen az oldalon...
