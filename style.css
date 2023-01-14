@@ -1,4 +1,5 @@
-/*body {
+
+body {
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -7,86 +8,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.nav {
-    background-color: rgb(90, 90, 90);
-}
-
-.header {
-    background-color: lightgray;
-    flex: 1;
-    display: flex;
-    
-    flex-direction: column;
-    padding: 1rem;
-    gap: 2rem;
-}
-
-.content {
-    flex-grow: 6;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.article {
-    background-color: lightblue;
-    flex: 2;
-}
-
-.footer {
-    background-color: lightgray;
-    padding: 10px;
-    flex: 1;
-}
-
-
-
-#kep2{
-    width: 600px;
-    align-items: center;
-    padding: auto;
-}
-
-a{
-    color: black;
-}
-
-@media screen and (min-width: 500px) {
-    .nav {
-        order: -1;
-        height: 100vh;
-    }
-
-    .header {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .header .router {
-        justify-content: flex-end;
-        gap: 3rem;
-    }
-
-    .content {
-        flex-direction: row;
-    }
-
-}*/
-
-
-
-body{
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background: linear-gradient(302deg, #495579, #263159, #251749);
+    text-align: center;
+    background: linear-gradient(302deg, #0A2647, #144272, #205295, #2C74B3);
     background-size: 600% 600%;
 
     -webkit-animation: hatteranim 16s ease infinite;
@@ -110,6 +33,17 @@ body{
     100%{background-position:0% 4%}
 }
 
+
+.header {
+    background-color: rgb(128, 128, 128, 0.25);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
 #kep1 {
     width: 5%;
     margin: 10px;
@@ -119,9 +53,10 @@ body{
   }
   
   @keyframes anim {
-    0%   {left:0px; top:-200px;}
+    0%   {left:0px; top:-125px;}
     100% {left:0px; top:0px;}
   }
+
 
 .cim{
     text-align: center;
@@ -129,21 +64,82 @@ body{
 
 }
 
-.header{
-    background-color: rgb(128, 128, 128, 0.25);
+.content {
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.box1{
-    width: 48.5%;
+
+.article {
+    width: 10%;
     height: 50%;
     margin: 10px;
-    background-image: url(./képek/tesla_model_3.webp);
     background-repeat: no-repeat;
-    box-shadow: 10px 10px rgba(34, 33, 33, 0.5);
+    flex: 2;
 }
 
 #kep2{
-    background-color: rgba(62, 62, 62);
-    width: 50%;
+    width: 70%;
+    margin-top: 2%;
+    position: relative;
+    animation-name: anim2;
+    animation-duration: 4s;
+    border-radius: 10%;
 }
 
+@keyframes anim2 {
+    0%   {left:-200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+
+.aside {
+    background-color: rgba(46, 44, 44, 0.521);
+    flex: 1;
+    margin-right: 50px;
+    color: white;
+    position: relative;
+    animation-name: anim3;
+    animation-duration: 3s;
+    border-radius: 10%;
+}
+
+li{
+    text-align: left;
+}
+
+@keyframes anim3 {
+    0%   {left:50px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+
+a{
+    color: black;
+}
+
+.footer {
+    background-color: rgb(128, 128, 128, 0.25);
+    flex: 1;
+    align-content: flex-end;
+    padding: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .header .router {
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
