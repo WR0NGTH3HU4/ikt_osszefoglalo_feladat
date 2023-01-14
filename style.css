@@ -118,12 +118,15 @@ body{
   }
   
   @keyframes anim {
-    0%   {left:200px; top:0px;}
+    0%   {left:0px; top:-200px;}
     100% {left:0px; top:0px;}
   }
 
-.teslalogo{
-    background-color: rgb(128, 128, 128, 0.3);
-    ju
-    
+.cim{
+    text-align: center;
+
+}
+
+.header{
+    background-color: rgb(128, 128, 128, 0.25);
 }
