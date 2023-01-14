@@ -1,4 +1,4 @@
-body {
+/*body {
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -41,16 +41,12 @@ body {
     flex: 1;
 }
 
-#kep1{
-    width: 100px;
-    align-items: flex-start;
-}
+
 
 #kep2{
     width: 600px;
     align-items: center;
-    padding-left: 25%;
-    padding-top: 10%;
+    padding: auto;
 }
 
 a{
@@ -77,4 +73,77 @@ a{
         flex-direction: row;
     }
 
+}*/
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: linear-gradient(302deg, #495579, #263159, #251749);
+    background-size: 600% 600%;
+
+    -webkit-animation: hatteranim 16s ease infinite;
+    -moz-animation: hatteranim 16s ease infinite;
+    animation: hatteranim 16s ease infinite;
 }
+
+@-webkit-keyframes hatteranim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes hatteranim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes hatteranim {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
+#kep1 {
+    width: 5%;
+    margin: 10px;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 4s;
+  }
+  
+  @keyframes anim {
+    0%   {left:0px; top:-200px;}
+    100% {left:0px; top:0px;}
+  }
+
+.cim{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 253, 253, 0.422);
+
+}
+
+.header{
+    background-color: rgb(128, 128, 128, 0.25);
+}
+
+.box1{
+    width: 48.5%;
+    height: 50%;
+    margin: 10px;
+    background-image: url(./képek/tesla_model_3.webp);
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px rgba(34, 33, 33, 0.5);
+}
+
+#kep2{
+    background-color: rgba(62, 62, 62);
+    width: 50%;
+}
+
