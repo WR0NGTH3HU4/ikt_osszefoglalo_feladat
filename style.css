@@ -98,7 +98,7 @@ body {
 .aside {
     background-color: rgba(46, 44, 44, 0.521);
     flex: 1;
-    margin-right: 50px;
+    margin-right: 2%;
     color: white;
     position: relative;
     animation-name: anim3;
@@ -130,16 +130,34 @@ a{
 @media screen and (min-width: 500px) {
 
     .header {
+        order: 1;
         flex-direction: row;
         justify-content: flex-end;
-    }
-
-    .header .router {
-        justify-content: flex-end;
-        gap: 3rem;
     }
 
     .content {
+        order: 2;
         flex-direction: row;
     }
+
+    .footer{
+        order: 3;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+
+ .header {
+    align-content: flex-start;
+ }
+
+ .article{
+    width: 100%;
+    height: 5%;
+ }
+
 }
